@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        python "Python 3.8.10"
+    }
     
     stages {
         stage('Checkout') {
